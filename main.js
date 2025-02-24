@@ -367,7 +367,7 @@ async function processBooking(bookingData) {
     };
     try {
         const user = auth.currentUser;
-        const stripe = await loadStripe('pk_live_51Qkmzw2M6NX3wDsRNaEGe8kjVBjy7HurG5huwDIrnnusk2VaMxGCYwtjel9MdYxkM3RH9deLSR9zWW7ZeZ0S4hd600Zt3gHnCb');
+        const stripe = await loadStripe('pk_test_51Qkmzw2M6NX3wDsR0gkq9rqCTOjXAPYfmYTobRThZnDVQ7Oik3GSniWVNxPXE4y8SudsXuEZXElPlBC0tg3WHTs900PKkM6wD3');
 
         // Create temporary booking
         const tempBookingsRef = collection(db, 'tempBookings');
@@ -1039,7 +1039,7 @@ window.bookPackage = async function(packageId, amount, packageName) {
                 document.body.style.overflow = 'auto';
 
                 // Initialize Stripe
-                const stripe = await loadStripe('pk_live_51Qkmzw2M6NX3wDsRNaEGe8kjVBjy7HurG5huwDIrnnusk2VaMxGCYwtjel9MdYxkM3RH9deLSR9zWW7ZeZ0S4hd600Zt3gHnCb');
+                const stripe = await loadStripe('pk_test_51Qkmzw2M6NX3wDsR0gkq9rqCTOjXAPYfmYTobRThZnDVQ7Oik3GSniWVNxPXE4y8SudsXuEZXElPlBC0tg3WHTs900PKkM6wD3');
 
                 // Create temporary booking
                 const tempBookingsRef = collection(db, 'tempBookings');
